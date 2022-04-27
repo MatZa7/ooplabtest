@@ -7,8 +7,6 @@
 - No use of notes or previously written code
 - No collaboration or communication
 
-- [Submit your solution](https://forms.office.com/Pages/ResponsePage.aspx?id=yxdjdkjpX06M7Nq8ji_V2ou3qmFXqEdGlmiD1Myl3gNUQjVRWjY0SklMUEFHVFdTWjZKUTBKUlI2MS4u)
-
 Nematodes, also called roundworms, are multicellular organisms that occur as parasites in animals and plants or as free-living forms in soil and water. Many species of nematodes are microscopic, however, some species such as tapeworms can grow to several meters in length. They are the most abundant multicellular lifeforms on the planet and there are over 400 quintillion individual nematodes. In today's lab test you will be coding a visualiser for a dataset of nematodes. Here is a video of the finished program (click the image for a video):
 
 [![YouTube](http://img.youtube.com/vi/Sixvl_2LgLg/0.jpg)](https://youtu.be/Sixvl_2LgLg)
@@ -34,6 +32,10 @@ _The file is stored in java/data for Windows users and in /data for Mac users_
 - Write code to visualise the nematodes as per the video
 - Write code to cycle through the nematodes using the arrow keys 
 - Add any other cool thing to your program, such as additional fields, colours, navigation etc etc.
+- Make at least 5 commented commits on your repo as you are going along, so I can see your progress 
+- [Submit your solution](https://forms.office.com/Pages/ResponsePage.aspx?id=yxdjdkjpX06M7Nq8ji_V2ou3qmFXqEdGlmiD1Myl3gNUQjVRWjY0SklMUEFHVFdTWjZKUTBKUlI2MS4u)
+
+
 
 ## Marking Scheme
 
