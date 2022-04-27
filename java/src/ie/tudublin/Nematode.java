@@ -1,6 +1,7 @@
 package ie.tudublin;
 
 import processing.core.PApplet;
+import processing.core.PConstants;
 import processing.data.TableRow;
 
 public class Nematode
@@ -37,13 +38,38 @@ public class Nematode
 
     public void render(NematodeVisualiser pa)
     {
-        pa.fill(255);
+        pa.colorMode(PConstants.RGB);
+        
+        if(gender.equals("f"))
+        {
+            pa.fill(255, 192, 203);
+        }
+        else if(gender.equals("m"))
+        {
+            pa.fill(194, 255, 245);
+        }
         float center = pa.width/2;
         float space = 10-length;
         space = space * 40;
+
+        pa.fill(255,255,255);
+        pa.textSize(25);
+        pa.textAlign(PApplet.CENTER, PApplet.CENTER);
+        pa.text(name, center, space/4);
         
         for(int i=1;i<=length;i++)
         {
+            if(gender.equals("h")) 
+            {
+                if(i%2==0)
+                {
+                    pa.fill(194, 255, 245);
+                }
+                else
+                {
+                    pa.fill(255, 192, 203);
+                }
+            }
             float y;
             if(length == 1)
             {

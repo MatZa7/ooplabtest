@@ -16,12 +16,11 @@ public class NematodeVisualiser extends PApplet
 
 	public void keyPressed()
 	{		
-		System.out.println("before= " + pos);
 		if (keyCode == LEFT)
 		{
 			if(pos == 0)
 			{
-				pos = nematodes.size();
+				pos = nematodes.size()-1;
 			}
 			else
 			{
@@ -30,9 +29,16 @@ public class NematodeVisualiser extends PApplet
 		}	
 		else if (keyCode == RIGHT)
 		{
-			pos++;
-		}	
-		System.out.println("after= " + pos);	
+			if(pos==nematodes.size()-1)
+			{
+				pos = 0;
+			}
+			else
+			{
+				pos++;
+			}
+			
+		}		
 	}
 
 
