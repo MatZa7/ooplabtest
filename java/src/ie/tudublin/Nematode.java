@@ -34,4 +34,16 @@ public class Nematode
         this.gender = gender;
         this.eyes = eyes;
     }
+
+    public void render(NematodeVisualiser pa)
+    {
+        pa.fill(255);
+        float space = pa.height/(length*1f);
+        for(int i=1;i<=length;i++)
+        {
+            float y = PApplet.map(i, 1,length, space, pa.height-space);
+            pa.circle(pa.width/2, y, 80);
+        }
+
+    }
 }
