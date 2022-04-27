@@ -25,15 +25,15 @@ _The file is stored in java/data for Windows users and in /data for Mac users_
 
 ## Instructions
 
-- Fork this repo
-- Set up origin and upstream remotes on your fork
-- Write a class called Nematode that has appropriate fields, a constructor, accessor methods and a toString method. Include in your solution a constructor that takes a TableRow parameter from the Processing library as a parameter
-- Write a method loadNematodes on the class NematodeVisualiser. It should load the csv file and populate an ArrayList of Nematode onjects
+- Fork this repo.
+- Set up origin and upstream remotes on your fork.
+- Write a class called Nematode that has appropriate fields, a constructor, accessor methods and a toString method. Include in your solution a constructor that takes a TableRow parameter from the Processing library as a parameter.
+- Write a method loadNematodes on the class NematodeVisualiser. It should load the csv file and populate an ArrayList of Nematode objects.
 - Write code to visualise the nematodes as per the video
-- Write code to cycle through the nematodes using the arrow keys 
+- Write code to cycle through the nematodes using the arrow keys, wrapping around when you reach the beginning or end. 
 - Add any other cool thing to your program, such as additional fields, colours, navigation etc etc.
-- Make at least 5 commented commits on your repo as you are going along, so I can see your progress 
-- [Submit your solution](https://forms.office.com/Pages/ResponsePage.aspx?id=yxdjdkjpX06M7Nq8ji_V2ou3qmFXqEdGlmiD1Myl3gNUQjVRWjY0SklMUEFHVFdTWjZKUTBKUlI2MS4u)
+- Make at least 5 commented commits on your repo as you are going along, so I can see your progress. 
+- [Submit your solution](https://forms.office.com/Pages/ResponsePage.aspx?id=yxdjdkjpX06M7Nq8ji_V2ou3qmFXqEdGlmiD1Myl3gNUQjVRWjY0SklMUEFHVFdTWjZKUTBKUlI2MS4u).
 
 
 
