@@ -73,10 +73,29 @@ public class NematodeVisualiser extends PApplet
         nematodes.get(x).render(this);;
     }
 
+	public void drawArrows()
+	{
+		fill(255);
+		float leftX1 = width/8;
+		float leftX2 = width/4;
+		float rightX1 = width - leftX1;
+		float rightX2 = width - leftX2;
+		line(leftX1,height/2,leftX2,height/2);
+		
+		line(rightX1,height/2,rightX2,height/2);
+
+		line(leftX1,height/2,leftX1*1.4f,height/2.1f);
+		line(leftX1,height/2,leftX1*1.4f,height-(height/2.1f));
+
+		line(rightX1,height/2,width-(leftX1*1.4f),height-(height/2.1f));
+		line(rightX1, height/2,width-(leftX1*1.4f),height/2.1f);
+	}
+
 
 	public void draw()
 	{	
 		background(0);
 		drawNematodes(pos);
+		drawArrows();
 	}
 }
