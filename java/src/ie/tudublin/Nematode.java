@@ -43,7 +43,13 @@ public class Nematode
         {
             float y = PApplet.map(i, 1,length, space, pa.height-space);
             pa.circle(pa.width/2, y, 80);
+            if( i == length && (gender.equals("f") || gender.equals("h")))
+            {
+                pa.circle(pa.width/2, y, 30);
+            }
+            
         }
+        
 
     }
 }
