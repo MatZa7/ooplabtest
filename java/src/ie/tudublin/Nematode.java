@@ -38,14 +38,49 @@ public class Nematode
     public void render(NematodeVisualiser pa)
     {
         pa.fill(255);
-        float space = pa.height/(length*1f);
+        float center = pa.width/2;
+        float space = 10-length;
+        space = space * 40;
+        
         for(int i=1;i<=length;i++)
         {
-            float y = PApplet.map(i, 1,length, space, pa.height-space);
-            pa.circle(pa.width/2, y, 80);
+            float y;
+            if(length == 1)
+            {
+                y = pa.height/2;
+            }
+            else{
+                y = PApplet.map(i, 1,length, space, pa.height-space);
+            }
+            
+            pa.circle(center, y, 80);
             if( i == length && (gender.equals("f") || gender.equals("h")))
             {
-                pa.circle(pa.width/2, y, 30);
+                pa.fill(0);
+                pa.circle(center, y, 30);
+                pa.fill(255);
+            }
+            if( i == length && (gender.equals("m") || gender.equals("h")))
+            {
+                
+                pa.line(center,y+30, center,y+90);
+                pa.circle(center,y+90, 10);
+            }
+
+            if( i == 1 && eyes == 1)
+            {
+                pa.stroke(255);
+                pa.line(center-30,y-30, center-60,y-60);
+                pa.line(center+30,y-30, center+60,y-60);
+                pa.circle(center-60,y-60, 10);
+                pa.circle(center+60,y-60, 10);
+            }
+
+            if(limbs == 1)
+            {
+                pa.stroke(255);
+                pa.line(center-30,y, center-80,y);
+                pa.line(center+30,y, center+80,y);
             }
             
         }
